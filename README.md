@@ -24,14 +24,14 @@ pada composer.json di root folder project Yii2 Anda.
 
 Cara penggunaan.
 -----
+Extension ini bersifat module, artinya kita tidak bisa langsung memakainya dengan memanggil `class` menggunakan namespace-nya. 
 
-Setelah extension ini berhasil terpasang dengan baik, 
-tambahkan baris kode berikut pada file konfigurasi Yii2, misal di `config/web.php`:
+
+Anda harus menambahkan baris kode berikut pada file konfigurasi Projek Yii2 Anda.
+Misalnya pada Yii2 basic template di `config/web.php`:
 
 
 ```php
-<?= \ahmadfadlydziljalal\strukturorganisasi\AutoloadExample::widget(); ?>
-
 return [
     'modules => [
         'strukturOrganisasi' => [
