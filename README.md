@@ -32,10 +32,9 @@ Misalnya pada Yii2 basic template di `config/web.php`:
 
 ```php
 return [
-    'modules => [
+    'modules' => [
         'strukturOrganisasi' => [
             'class' => 'ahmadfadlydziljalal\strukturorganisasi\Module',
-            ...
         ]
     ]
 ]
@@ -43,10 +42,10 @@ return [
 ```
 Jika terpasang dengan benar, Anda bisa mengaskes module ini pada alamat
 ```
-http://localhost/path/to/index.php?r=ahmadfadlydziljalal/struktur-organisasi
+http://localhost/path/to/index.php?r=struktur-organisasi/manage
 ```
 
 atau setelah pretty-url sudah diaktikan, cukup gunakan: 
 ```
-http://localhost/path/to/ahmadfadlydziljalal/struktur-organisasi
+http://localhost/path/to/struktur-organisasi/manage
 ```
