@@ -5,9 +5,9 @@ Module Struktur Organisasi
 Instalasi
 ------------
 
-Untuk menggunakan extension ini sebaiknya gunakan composer. [composer](http://getcomposer.org/download/).
+Untuk menggunakan extension ini sebaiknya gunakan [composer](http://getcomposer.org/download/).
 
-Ketikkan perintah ini pada root project Yii2 Anda.
+Ketikkan perintah ini pada root project Yii2 Anda untuk menambahkan ekstensi ini pada project Yii2 Anda.
 
 ```
 composer require --prefer-dist ahmadfadlydziljalal/yii2-strukturorganisasi "*" -vvv
