@@ -30,8 +30,6 @@ tambahkan baris kode berikut pada file konfigurasi Yii2, misal di `config/web.ph
 
 
 ```php
-<?= \ahmadfadlydziljalal\strukturorganisasi\AutoloadExample::widget(); ?>
-
 return [
     'modules => [
         'strukturOrganisasi' => [
