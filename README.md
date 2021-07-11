@@ -2,30 +2,52 @@ yii2-struktur-organisasi
 ========================
 Module Struktur Organisasi
 
-Installation
+Instalasi
 ------------
 
-The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
+Untuk menggunakan extension ini sebaiknya gunakan composer. [composer](http://getcomposer.org/download/).
 
-Either run
+Ketikkan perintah ini pada root project Yii2 Anda.
 
 ```
-php composer.phar require --prefer-dist ahmadfadlydziljalal/yii2-strukturorganisasi "*"
+composer require --prefer-dist ahmadfadlydziljalal/yii2-strukturorganisasi "*" -vvv
 ```
 
-or add
+Atau tambahkan baris code ini 
 
 ```
 "ahmadfadlydziljalal/yii2-strukturorganisasi": "*"
 ```
 
-to the require section of your `composer.json` file.
+pada composer.json di root folder project Yii2 Anda.
 
 
-Usage
+Cara penggunaan.
 -----
 
-Once the extension is installed, simply use it in your code by  :
+Setelah extension ini berhasil terpasang dengan baik, 
+tambahkan baris kode berikut pada file konfigurasi Yii2, misal di `config/web.php`:
+
 
 ```php
-<?= \ahmadfadlydziljalal\strukturorganisasi\AutoloadExample::widget(); ?>```
+<?= \ahmadfadlydziljalal\strukturorganisasi\AutoloadExample::widget(); ?>
+
+return [
+    'modules => [
+        'strukturOrganisasi' => [
+            'class' => 'ahmadfadlydziljalal\strukturorganisasi\Module',
+            ...
+        ]
+    ]
+]
+
+```
+Jika terpasang dengan benar, Anda bisa mengaskes module ini pada alamat
+```
+http://localhost/path/to/index.php?r=ahmadfadlydziljalal/struktur-organisasi
+```
+
+atau setelah pretty-url sudah diaktikan, cukup gunakan: 
+```
+http://localhost/path/to/ahmadfadlydziljalal/struktur-organisasi
+```
