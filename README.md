@@ -33,7 +33,7 @@ Misalnya pada Yii2 basic template di `config/web.php`:
 ```php
 return [
     'modules' => [
-        'strukturOrganisasi' => [
+        'struktur-organisasi' => [
             'class' => 'ahmadfadlydziljalal\strukturorganisasi\Module',
         ]
     ]
