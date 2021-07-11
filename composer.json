@@ -1,0 +1,21 @@
+{
+    "name": "ahmadfadlydziljalal/yii2-strukturorganisasi",
+    "description": "Module Struktur Organisasi",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Ahmad Fadly Dzil Jalal",
+            "email": "ahmadfadlydzilajalal@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "ahmadfadlydziljalal\\strukturorganisasi\\": ""
+        }
+    }
+}
