@@ -30,7 +30,6 @@ Extension ini bersifat module, artinya kita tidak bisa langsung memakainya denga
 Anda harus menambahkan baris kode berikut pada file konfigurasi Projek Yii2 Anda.
 Misalnya pada Yii2 basic template di `config/web.php`:
 
-
 ```php
 return [
     'modules => [
