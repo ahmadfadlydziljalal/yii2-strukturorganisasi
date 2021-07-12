@@ -10,13 +10,13 @@ Untuk menggunakan extension ini sebaiknya gunakan [composer](http://getcomposer.
 Ketikkan perintah ini pada root project Yii2 Anda untuk menambahkan ekstensi ini pada project Yii2 Anda.
 
 ```
-composer require --prefer-dist ahmadfadlydziljalal/yii2-strukturorganisasi "*" -vvv
+composer require --prefer-dist ahmadfadlydziljalal/yii2-strukturorganisasi "dev-main" -vvv
 ```
 
 Atau tambahkan baris code ini 
 
 ```
-"ahmadfadlydziljalal/yii2-strukturorganisasi": "*"
+"ahmadfadlydziljalal/yii2-strukturorganisasi": "dev-main"
 ```
 
 pada composer.json di root folder project Yii2 Anda.
