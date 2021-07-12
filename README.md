@@ -2,6 +2,8 @@ yii2-struktur-organisasi
 ========================
 Module Struktur Organisasi
 
+![Image](https://raw.githubusercontent.com/ahmadfadlydziljalal/yii2-strukturorganisasi/main/screenshot.png)
+
 Tentang Extension
 ------------
 
