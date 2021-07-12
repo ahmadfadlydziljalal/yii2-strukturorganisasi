@@ -3,7 +3,7 @@
 /* @var $this View */
 
 use ahmadfadlydziljalal\strukturorganisasi\assets\TreeFlexAsset;
-use ahmadfadlydziljalal\strukturorganisasi\components\helpers\OrganizationTree As Tree;
+use ahmadfadlydziljalal\strukturorganisasi\components\helpers\OrganizationTree as Tree;
 use rmrevin\yii\fontawesome\FAS;
 use yii\helpers\Html;
 use yii\web\View;
@@ -19,10 +19,16 @@ TreeFlexAsset::register($this);
 
 <div class="struktur-organisasi-diagram">
 
-    <?= Html::a(FAS::icon(FAS::_SEARCH) . ' Back To Form',
+    <?= Html::a(FAS::icon(FAS::_SEARCH) . ' Kembali ke form',
         ['struktur-organisasi/generate-diagram'],
-        ['class' => 'btn btn-primary'])
+        [
+            'class' => 'btn btn-primary',
+            'style' => [
+                    'margin-bottom' => '2em'
+            ]
+        ])
     ?>
+
 
     <?= Html::beginTag("div", [
         'class' => 'tf-tree',

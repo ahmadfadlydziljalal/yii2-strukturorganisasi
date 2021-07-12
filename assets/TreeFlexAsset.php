@@ -11,7 +11,7 @@ use yii\web\AssetBundle;
 class TreeFlexAsset extends AssetBundle
 {
     public $sourcePath = '@vendor/ahmadfadlydziljalal/yii2-strukturorganisasi/assets/dist';
-    public $css = [     
+    public $css = [
         'css/tree-flex.css',
     ];
 }

@@ -17,7 +17,8 @@ use yii\widgets\ActiveForm;
     <?php if (!$model->isNewRecord) : ?>
         <?= $form->field($model, 'parent_id')
             ->dropDownList(StrukturOrganisasi::mapIDToNamaDenganKode(), [
-                'autofocus' => 'autofocus'
+                'autofocus' => 'autofocus',
+                'prompt' => '-'
             ])
         ?>
     <?php endif ?>
@@ -27,8 +28,12 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'singkatan')->textInput(['maxlength' => true]) ?>
     <?= $form->field($model, 'kode')->textInput(['maxlength' => true])->hint("Ganti spasi dengan underscore | Best Practice: GROUP_PERUSAHAAN_CABANG_DEPARTEMEN_JABATAN ") ?>
 
-    <?= Html::a(FAS::icon(FAS::_WINDOW_CLOSE) . ' Tutup', ['index'], ['class' => 'btn btn-secondary']) ?>
-    <?= Html::submitButton(FAS::icon(FAS::_SAVE) . ' Simpan', ['class' => 'btn btn-primary']) ?>
+    <div class="row">
+        <div class="col-sm-12 col-md-12">
+            <?= Html::a(FAS::icon(FAS::_WINDOW_CLOSE) . ' Tutup', ['index'], ['class' => 'btn btn-default']) ?>
+            <?= Html::submitButton(FAS::icon(FAS::_SAVE) . ' Simpan', ['class' => 'btn btn-primary pull-right']) ?>
+        </div>
+    </div>
 
     <?php ActiveForm::end(); ?>
 
