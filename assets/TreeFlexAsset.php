@@ -14,4 +14,7 @@ class TreeFlexAsset extends AssetBundle
     public $css = [
         'css/tree-flex.css',
     ];
+    public $depends = [
+        'rmrevin\yii\fontawesome\NpmFreeAssetBundle'
+    ];
 }
