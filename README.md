@@ -40,6 +40,12 @@ return [
 ]
 
 ```
+
+Lakukan migration
+```php
+php yii migrate --migrationPath=@ahmadfadlydziljalal/strukturorganisasi/migrations
+```
+
 Jika terpasang dengan benar, Anda bisa mengaskes module ini pada alamat
 ```
 http://localhost/path/to/index.php?r=struktur-organisasi/manage
