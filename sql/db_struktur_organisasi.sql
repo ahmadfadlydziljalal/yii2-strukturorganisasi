@@ -1,3 +1,5 @@
+USE db;
+
 create table struktur_organisasi
 (
     id         int auto_increment
