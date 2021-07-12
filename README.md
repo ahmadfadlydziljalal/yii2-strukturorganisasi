@@ -2,6 +2,18 @@ yii2-struktur-organisasi
 ========================
 Module Struktur Organisasi
 
+Tentang Extension
+------------
+
+[Hirarki data pada MYSQL](http://mikehillyer.com/articles/managing-hierarchical-data-in-mysql/) 
+
+Saat ini hanya mendukung MYSQL Versi 8 menggunakan CTE untuk memanipulasi node-node pada Adjacency List. 
+
+Implementasi CTE :
+ 
+[Struktur Organisasi](https://www.percona.com/blog/2020/02/13/introduction-to-mysql-8-0-recursive-common-table-expression-part-2/)
+
+
 Instalasi
 ------------
 
@@ -41,17 +53,19 @@ return [
 
 ```
 
-Lakukan migration
+Lakukan migration, untuk uji coba, jangan lupa generate data dummy nya juga,
 ```php
 php yii migrate --migrationPath=@ahmadfadlydziljalal/strukturorganisasi/migrations
 ```
 
+
+
 Jika terpasang dengan benar, Anda bisa mengaskes module ini pada alamat
 ```
-http://localhost/path/to/index.php?r=struktur-organisasi/manage
+http://localhost/path/to/index.php?r=dzil/struktur-organisasi
 ```
 
 atau setelah pretty-url sudah diaktikan, cukup gunakan: 
 ```
-http://localhost/path/to/struktur-organisasi/manage
+http://localhost/path/to/dzil/struktur-organisasi
 ```
